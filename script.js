@@ -1,22 +1,22 @@
 (function() {
-    var numberCaught = 0;
-    var caughtField = document.querySelector('.caught');
-    var timeField = document.querySelector('.timer');
-    var plateau = document.querySelector("#plateau")
-    var btnReset = document.querySelector(".reset")
-    var flippedCards = [];
-    var card, front, bg;
-    var j, x, i;
-    var cards;
-    var seconds = 0;
-    var cardSize;
+   let numberCaught = 0;
+   let caughtField = document.querySelector('.caught');
+   let timeField = document.querySelector('.timer');
+   let plateau = document.querySelector("#plateau")
+   let btnReset = document.querySelector(".reset")
+   let flippedCards = [];
+   let card, front, bg;
+   let j, x, i;
+   let cards;
+   let seconds = 0;
+   let cardSize;
 
 
     btnReset.addEventListener("click", reset);
     //Le menu disparaît au début du jeu
     $("#menu").hide();
     //Définition d'un tableau avec toutes les faces des cartes
-    var bgCards = [
+   let bgCards = [
         "images/charmander.svg",
         "images/pikachu.svg",
         "images/squirtle.svg",
@@ -30,11 +30,11 @@
         "images/meowth.svg",
         "images/meowth.svg"
     ]
-    var bgCardsLength = bgCards.length;
+   let bgCardsLength = bgCards.length;
     shuffle(bgCards);
 
     //Création de chaque carte avec une face particuliere et ajout d'un écouteur au clic
-    for (var i = 0; i < bgCardsLength; i++) {
+    for (let i = 0; i < bgCardsLength; i++) {
         card = document.createElement("div");
         card.setAttribute("class", "card");
         card.innerHTML = "<figure class='back'></figure><figure class='front'></figure>";
@@ -51,10 +51,10 @@
     }
     //Reset : on sélectionne toutes les cartes et on leur retire le classe reset
     //On enlève le menu
-    //On réinitialise les variables
+    //On réinitialise lesletiables
     function reset() {
         cards = document.querySelectorAll(".card");
-        for (var u = 0; u < cards.length; u++) {
+        for (let u = 0; u < cards.length; u++) {
             cards[u].classList.remove('flipped');
         }
         $("#menu").fadeOut("fast");
