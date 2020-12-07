@@ -1,6 +1,8 @@
 body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.5;
+    background-image:url(images/fond_index.jpg);
+    background-size: cover;
 }
 
 section {
@@ -17,11 +19,13 @@ header {
 h1 {
     font-weight: bold;
     margin: 0;
+    color: whitesmoke;
 }
 
 h3 {
     align-self: flex-end;
     margin: 0;
+    color: whitesmoke;
 }
 
 #plateau {
