@@ -117,11 +117,12 @@ h3 {
     background-size: cover;
     /*background-color: #ded2ae;*/
     border-radius: 10px;
-    padding: 30px 10px;
+    padding: 80px 50px;
     font-size: 1.6rem;
     text-align: center;
     display: inline-block;
     border: 3px solid #fff;
+    color: white;
 }
 
 #menu img {
