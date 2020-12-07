@@ -41,6 +41,9 @@ h3 {
     flex-flow: row wrap;
     text-align: center;
     justify-content: space-around;
+    -webkit-animation-name: bounceInRight;
+      animation-name: bounceInRight;
+      animation-duration: 2s;
 }
 
 .card {
