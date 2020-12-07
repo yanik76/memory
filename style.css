@@ -110,7 +110,9 @@ h3 {
     height: auto;
     position: absolute;
     top: 150px;
-    background-color: #ded2ae;
+    background: no-repeat url("images/popup_image.png");
+    background-size: cover;
+    /*background-color: #ded2ae;*/
     border-radius: 10px;
     padding: 30px 10px;
     font-size: 1.6rem;
