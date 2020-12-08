@@ -15,6 +15,7 @@
 
 
     btnReset.addEventListener("click", reset);
+    btnReset2.addEventListener("click", reset);
     //Le menu disparaît au début du jeu
     $("#menu").hide();
     $("#menu2").hide();
@@ -36,7 +37,6 @@
         "images/venonat.svg",
         "images/zubat.svg",
         "images/venonat.svg",
-
         "images.rattata.svg",
         "images.rattata.svg",
         "images.dratini.svg",
@@ -70,6 +70,7 @@
             cards[u].classList.remove('flipped');
         }
         $("#menu").fadeOut("fast");
+        $("#menu2").fadeOut("fast");
         numberCaught = 0;
         caughtField.innerHTML = numberCaught;
         seconds = 0;
@@ -110,12 +111,12 @@
             numberCaught++;
             caughtField.innerHTML = numberCaught;
             flippedCards = [];
-            if (numberCaught == bgCardsLength / 2 && seconds < 20) {
+            if (numberCaught == bgCardsLength / 2 && seconds < 40) {
                 $("#menu").fadeIn("fast");
                 timeField.innerHTML = seconds;
             }
             else if
-                (numberCaught == bgCardsLength / 2 && seconds > 20) {
+                (numberCaught == bgCardsLength / 2 && seconds > 40) {
                 $("#menu2").fadeIn("fast");
                 timeField2.innerHTML = seconds;
             }
