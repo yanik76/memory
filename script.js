@@ -77,6 +77,7 @@
             cards[u].classList.remove('flipped');
         }
         $("#menu").fadeOut("fast");
+        $("#menu2").fadeOut("fast");
         numberCaught = 0;
         caughtField.innerHTML = numberCaught;
         seconds = 0;
