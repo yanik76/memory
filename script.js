@@ -36,7 +36,7 @@
         "images/venonat.svg",
         "images/zubat.svg",
         "images/venonat.svg",
-
+        
         "images.rattata.svg",
         "images.rattata.svg",
         "images.dratini.svg",
@@ -70,9 +70,9 @@
             cards[u].classList.remove('flipped');
         }
         $("#menu").fadeOut("fast");
-        numberCaught = 0;
-        caughtField.innerHTML = numberCaught;
-        seconds = 0;
+            numberCaught = 0;
+            caughtField.innerHTML = numberCaught;
+            seconds = 0;
     }
     //A chaque fois que le tableau est initialisé, les cartes sont mélangés 
     function shuffle(tab) {
