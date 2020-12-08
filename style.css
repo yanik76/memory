@@ -47,7 +47,7 @@ h3 {
 }
 
 .card {
-    width: calc(25% - 10px);
+    width: calc(20% - 10px);
     cursor: pointer;
     box-sizing: border-box;
     transform-style: preserve-3d;

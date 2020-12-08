@@ -28,7 +28,16 @@
         "images/eevee.svg",
         "images/eevee.svg",
         "images/meowth.svg",
-        "images/meowth.svg"
+        "images/meowth.svg",
+        "images/zubat.svg",
+        "images/venonat.svg",
+        "images/zubat.svg",
+        "images/venonat.svg",
+        
+        "images.rattata.svg",
+        "images.rattata.svg",
+        "images.dratini.svg",
+        "images.dratini.svg",
     ]
    let bgCardsLength = bgCards.length;
     shuffle(bgCards);
