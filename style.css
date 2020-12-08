@@ -3,12 +3,12 @@ body {
     line-height: 1.5;
 }
 
-section {
+.section-jeu {
     max-width: 720px;
     margin: 0 auto;
 }
 
-header {
+.content {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;

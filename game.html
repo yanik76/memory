@@ -6,13 +6,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="home.css">
         <LINK rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <section>
-        <header>
+    <header class="pageHome">
+        <nav class="navBar">
+             <h1 id="logo"> LOGO </h1>
+             <ul>
+                 <li><a href="index.html">Acceuile</a></li>
+                 <li><a href="game.html" alt=""> Jouer!</a></li>
+             </ul>
+    
+        </nav>
+    </header>
+    <section class="section-jeu">
+        <div class="content"></header>
             <h1>Catch them all !</h1>
             <h3>Caught : <span class="caught">0</span></h3>
-        </header>
+        </div>
         <div id="plateau">
             <div id="menu"><img src="images/pokeball.svg" />
                 <p>Yeah ! <br> Vous les avez tous attrapés en <strong><span class="timer">0</span> secondes.</strong></p>
