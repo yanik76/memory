@@ -15,6 +15,7 @@
 
 
     btnReset.addEventListener("click", reset);
+    btnReset2.addEventListener("click", reset);
     //Le menu disparaît au début du jeu
     $("#menu").hide();
     $("#menu2").hide();
