@@ -1,22 +1,25 @@
-(function() {
-   let numberCaught = 0;
-   let caughtField = document.querySelector('.caught');
-   let timeField = document.querySelector('.timer');
-   let plateau = document.querySelector("#plateau")
-   let btnReset = document.querySelector(".reset")
-   let flippedCards = [];
-   let card, front, bg;
-   let j, x, i;
-   let cards;
-   let seconds = 0;
-   let cardSize;
+(function () {
+    let numberCaught = 0;
+    let caughtField = document.querySelector('.caught');
+    let timeField = document.querySelector('.timer');
+    let timeField2 = document.querySelector('.timer2');
+    let plateau = document.querySelector("#plateau");
+    let btnReset = document.querySelector(".reset");
+    let btnReset2 = document.querySelector(".reset2");
+    let flippedCards = [];
+    let card, front, bg;
+    let j, x, i;
+    let cards;
+    let seconds = 0;
+    let cardSize;
 
 
     btnReset.addEventListener("click", reset);
     //Le menu disparaît au début du jeu
     $("#menu").hide();
+    $("#menu2").hide();
     //Définition d'un tableau avec toutes les faces des cartes
-   let bgCards = [
+    let bgCards = [
         "images/charmander.svg",
         "images/pikachu.svg",
         "images/squirtle.svg",
@@ -39,7 +42,7 @@
         "images.dratini.svg",
         "images.dratini.svg",
     ]
-   let bgCardsLength = bgCards.length;
+    let bgCardsLength = bgCards.length;
     shuffle(bgCards);
 
     //Création de chaque carte avec une face particuliere et ajout d'un écouteur au clic
@@ -54,7 +57,7 @@
         front = card.childNodes[1];
         bg = "url(" + bgCards[i] + ") no-repeat";
         front.style.background = bg;
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             addFlipped(this);
         });
     }
@@ -67,9 +70,9 @@
             cards[u].classList.remove('flipped');
         }
         $("#menu").fadeOut("fast");
-        numberCaught = 0;
-        caughtField.innerHTML = numberCaught;
-        seconds = 0;
+            numberCaught = 0;
+            caughtField.innerHTML = numberCaught;
+            seconds = 0;
     }
     //A chaque fois que le tableau est initialisé, les cartes sont mélangés 
     function shuffle(tab) {
@@ -107,14 +110,19 @@
             numberCaught++;
             caughtField.innerHTML = numberCaught;
             flippedCards = [];
-            if (numberCaught == bgCardsLength / 2) {
+            if (numberCaught == bgCardsLength / 2 && seconds < 20) {
                 $("#menu").fadeIn("fast");
                 timeField.innerHTML = seconds;
+            }
+            else if
+                (numberCaught == bgCardsLength / 2 && seconds > 20) {
+                $("#menu2").fadeIn("fast");
+                timeField2.innerHTML = seconds;
             }
         }
     }
     //Timer
-    setInterval(function() {
+    setInterval(function () {
         seconds++;
     }, 1000);
 }());

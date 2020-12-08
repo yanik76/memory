@@ -113,7 +113,7 @@ h3 {
     height: auto;
     position: absolute;
     top: 150px;
-    background: no-repeat url("images/popup_image.png");
+    background: no-repeat url("images/image_popup2.jpg");
     background-size: cover;
     /*background-color: #ded2ae;*/
     border-radius: 10px;
@@ -136,7 +136,7 @@ h3 {
 #menu button {
     cursor: pointer;
     font-size: 1.2rem;
-    background-color: #368090;
+    background-color: #d61818;
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
@@ -145,6 +145,47 @@ h3 {
 }
 
 #menu button:hover {
+    background-color: #1d5561;
+}
+
+#menu2 {
+    z-index: 2;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    background: no-repeat url("images/image_popup2.jpg");
+    background-size: cover;
+    /*background-color: #ded2ae;*/
+    border-radius: 10px;
+    padding: 80px 50px;
+    font-size: 1.6rem;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #fff;
+    color: white;
+}
+
+#menu2 img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: calc(50% - 45px);
+    top: -55px;
+}
+
+#menu2 button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #d61818;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+}
+
+#menu2 button:hover {
     background-color: #1d5561;
 }
 
