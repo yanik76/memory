@@ -3,6 +3,7 @@ body {
     line-height: 1.5;
     background-image:url(images/fond_index.jpg);
     background-size: cover;
+    text-align: center;
 }
 
 .section-jeu {
@@ -29,7 +30,7 @@ h3 {
 }
 
 #plateau {
-    width: 100%;
+    width: 50%;
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -39,7 +40,6 @@ h3 {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    text-align: center;
     justify-content: space-around;
     -webkit-animation-name: bounceInRight;
       animation-name: bounceInRight;
