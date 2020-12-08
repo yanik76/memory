@@ -20,27 +20,33 @@
     $("#menu2").hide();
     //Définition d'un tableau avec toutes les faces des cartes
     let bgCards = [
-        "images/charmander.svg",
-        "images/pikachu.svg",
-        "images/squirtle.svg",
-        "images/snorlax.svg",
-        "images/charmander.svg",
-        "images/pikachu.svg",
-        "images/squirtle.svg",
-        "images/snorlax.svg",
-        "images/eevee.svg",
-        "images/eevee.svg",
-        "images/meowth.svg",
-        "images/meowth.svg",
-        "images/zubat.svg",
-        "images/venonat.svg",
-        "images/zubat.svg",
-        "images/venonat.svg",
+       
+        "images/15.svg",
+        "images/09.svg",
+        "images/11.svg",
+        "images/11.svg",
+        "images/17.svg",
+        "images/17.svg",
+        "images/03.svg",
+        "images/03.svg",
+        "images/04.svg",
+        "images/04.svg",
+        "images/05.svg",
+        "images/05.svg",
+        "images/06.svg",
+        "images/06.svg",
+        "images/13.svg",
+        "images/13.svg",
+        "images/18.svg",
+        "images/18.svg",
 
-        "images.rattata.svg",
-        "images.rattata.svg",
-        "images.dratini.svg",
-        "images.dratini.svg",
+       
+        "images/09.svg",
+        
+        "images/15.svg",
+        
+
+       
     ]
     let bgCardsLength = bgCards.length;
     shuffle(bgCards);
