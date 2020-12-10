@@ -114,12 +114,12 @@
             numberCaught++;
             caughtField.innerHTML = numberCaught;
             flippedCards = [];
-            if (numberCaught == bgCardsLength / 2 && seconds < 20) {
+            if (numberCaught == bgCardsLength / 2 && seconds < 40) {
                 $("#menu").fadeIn("fast");
                 timeField.innerHTML = seconds;
             }
             else if
-                (numberCaught == bgCardsLength / 2 && seconds > 20) {
+                (numberCaught == bgCardsLength / 2 && seconds > 40) {
                 $("#menu2").fadeIn("fast");
                 timeField2.innerHTML = seconds;
             }
