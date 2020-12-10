@@ -86,7 +86,7 @@
             tab[j] = x;
         }
     }
-    //Quand on clique sur une carte, la classe "flipped" s'aout à celle-ci, ce qui donne l'impression qu'elle se retourne
+    //Quand on clique sur une carte, la classe "flipped" s'ajoute à celle-ci, ce qui donne l'impression qu'elle se retourne
     //On l'ajoute dans le tableau 'flippedCards'
     function addFlipped(target) {
         if (!target.classList.contains('flipped')) {
@@ -108,18 +108,18 @@
     }
     //Si les cartes retournées sont identiques, alors on ajoute 1 au score et on réinitialise flippedCards (mais les 2 cartes restent retournées)
     //Si le score est égal à la moitié du tableau, alors le menu apparaît parce que c'est la victoire
-    // Si temps inférieur à 20 secondes on affiche le menu1, sinon le menu 2
+    //Si temps inférieur à 20 secondes on affiche le menu1, sinon le menu 2
     function checkResult() {
         if (flippedCards[0].innerHTML == flippedCards[1].innerHTML) {
             numberCaught++;
             caughtField.innerHTML = numberCaught;
             flippedCards = [];
-            if (numberCaught == bgCardsLength / 2 && seconds < 40) {
+            if (numberCaught == bgCardsLength / 2 && seconds < 50) {
                 $("#menu").fadeIn("fast");
                 timeField.innerHTML = seconds;
             }
             else if
-                (numberCaught == bgCardsLength / 2 && seconds > 40) {
+                (numberCaught == bgCardsLength / 2 && seconds > 50) {
                 $("#menu2").fadeIn("fast");
                 timeField2.innerHTML = seconds;
             }
