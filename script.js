@@ -16,7 +16,7 @@
 
     btnReset.addEventListener("click", reset);
     btnReset2.addEventListener("click", reset);
-    //Le menu disparaît au début du jeu
+    //Le menu1 ou 2 disparaît au début du jeu
     $("#menu").hide();
     $("#menu2").hide();
     //Définition d'un tableau avec toutes les faces des cartes
@@ -40,19 +40,14 @@
         "images/13.svg",
         "images/18.svg",
         "images/18.svg",
-
-       
         "images/09.svg",
-        
         "images/15.svg",
-        
-
-       
+               
     ]
     let bgCardsLength = bgCards.length;
     shuffle(bgCards);
 
-    //Création de chaque carte avec une face particuliere et ajout d'un écouteur au clic
+    //Création de chaque carte avec une face particuliere et ajout d'un EventListener au clic
     for (let i = 0; i < bgCardsLength; i++) {
         card = document.createElement("div");
         card.setAttribute("class", "card");
@@ -69,8 +64,8 @@
         });
     }
     //Reset : on sélectionne toutes les cartes et on leur retire le classe reset
-    //On enlève le menu
-    //On réinitialise lesletiables
+    //On enlève le menu 1 ou 2 en fonction du temps réalisé
+    //On réinitialise les cartes
     function reset() {
         cards = document.querySelectorAll(".card");
         for (let u = 0; u < cards.length; u++) {
@@ -82,7 +77,7 @@
         caughtField.innerHTML = numberCaught;
         seconds = 0;
     }
-    //A chaque fois que le tableau est initialisé, les cartes sont mélangés 
+    //A chaque fois que le tableau est initialisé, les cartes sont mélangées 
     function shuffle(tab) {
         for (i = tab.length; i > 0; i--) {
             j = Math.floor(Math.random() * i);
@@ -113,6 +108,7 @@
     }
     //Si les cartes retournées sont identiques, alors on ajoute 1 au score et on réinitialise flippedCards (mais les 2 cartes restent retournées)
     //Si le score est égal à la moitié du tableau, alors le menu apparaît parce que c'est la victoire
+    // Si temps inférieur à 20 secondes on affiche le menu1, sinon le menu 2
     function checkResult() {
         if (flippedCards[0].innerHTML == flippedCards[1].innerHTML) {
             numberCaught++;
