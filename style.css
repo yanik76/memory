@@ -1,8 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.5;
     background-image:url(images/fond_index.jpg);
     background-size: cover;
+}
+/* header */
+.pageHome {
+    background-color: brown;
+    color: #fff;
+    font-family: sans-serif;
+
+}
+.navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.navBar ul {
+    display: flex;
+    flex-grow: 0.3;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+.navBar {
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#logo {
+    flex-grow: 3;
 }
 
 .section-jeu {
@@ -16,13 +50,13 @@ body {
     margin-top: 20px;
 }
 
-h1 {
+.content h1 {
     font-weight: bold;
     margin: 0;
     color: whitesmoke;
 }
 
-h3 {
+.content h3 {
     align-self: flex-end;
     margin: 0;
     color: whitesmoke;
@@ -113,7 +147,7 @@ h3 {
     height: auto;
     position: absolute;
     top: 150px;
-    background: no-repeat url("images/Voyage-aux-Maldives.png");
+    background: linear-gradient(180deg, rgb(19 19 19 / 64%) 28%, rgb(26 26 28 / 37%) 58%), no-repeat url("images/Voyage-aux-Maldives.png");
     background-size: cover;
     /*background-color: #ded2ae;*/
     border-radius: 10px;
@@ -154,7 +188,7 @@ h3 {
     height: auto;
     position: absolute;
     top: 150px;
-    background: no-repeat url("images/838_bidonville_petite_ceinture_7.png");
+    background: linear-gradient(180deg, rgb(19 19 19 / 64%) 28%, rgb(26 26 28 / 37%) 58%), no-repeat url("images/838_bidonville_petite_ceinture_7.png");
     background-size: cover;
     /*background-color: #ded2ae;*/
     border-radius: 10px;
