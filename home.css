@@ -73,3 +73,6 @@ body {
     border: none;
     cursor: pointer;
 }
+h3.animate__animated.animate__backInUp.animate__delay-3s {
+    margin-bottom: revert;
+}
