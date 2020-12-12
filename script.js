@@ -108,7 +108,7 @@
     }
     //Si les cartes retournées sont identiques, alors on ajoute 1 au score et on réinitialise flippedCards (mais les 2 cartes restent retournées)
     //Si le score est égal à la moitié du tableau, alors le menu apparaît parce que c'est la victoire
-    //Si temps inférieur à 20 secondes on affiche le menu1, sinon le menu 2
+    //Si temps inférieur à 50 secondes on affiche le menu1, sinon le menu 2
     function checkResult() {
         if (flippedCards[0].innerHTML == flippedCards[1].innerHTML) {
             numberCaught++;
